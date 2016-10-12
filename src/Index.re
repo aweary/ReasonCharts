@@ -34,9 +34,9 @@ let render = fun () => {
   GlMat.load_identity ();
   GlDraw.begins `lines;
   GlDraw.color (1.0, 1.0, 1.0);
-  ignore @@ Draw.drawAxis ();
+  ignore @@ Draw.drawAxis useGrid::true;
   GlDraw.color (1.0, 0.5, 0.5);
-  List.iteri (Draw.drawLineSegment scaledData) scaledData;
+  List.iteri (Draw.drawLine scaledData) scaledData;
   GlDraw.ends ();
   Glut.swapBuffers ();
 };

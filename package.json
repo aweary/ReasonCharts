@@ -9,7 +9,7 @@
   "author": "Aweary",
   "license": "MIT",
   "keywords": [
-    "reason",
+    "reason"
   ],
   "scripts": {
     "postinstall": "npm run build",
