@@ -1,0 +1,17 @@
+_build/**
+*~
+*.cmi
+*.exe
+*.cmo
+*.cmx
+*.cma
+*.cmxa
+*.cmxs
+*.a
+*.o
+*.annot
+*.run
+*.opt
+
+node_modules
+.jenga

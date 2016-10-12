@@ -1,0 +1,40 @@
+{
+  "name": "ReasonCharts",
+  "version": "0.0.1",
+  "description": "Native OpenGL charting library for ReasonML",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aweary/ReasonCharts.git"
+  },
+  "author": "Aweary",
+  "license": "MIT",
+  "keywords": [
+    "reason",
+  ],
+  "scripts": {
+    "postinstall": "npm run build",
+    "test": "_build/default/src/app.out",
+    "start": "_build/default/src/app.out",
+    "build": "eval $(dependencyEnv) && nopam && rebel",
+    "top": "eval $(dependencyEnv) && rtop",
+    "env": "eval $(dependencyEnv) && env",
+    "editor": "eval $(dependencyEnv) && eval $EDITOR",
+    "whereisocamlmerlin": "eval $(dependencyEnv) && which ocamlmerlin-reason"
+  },
+  "dependencies": {
+    "@opam-alpha/lablgl": "*",
+    "@opam-alpha/merlin": "^ 2.5.0",
+    "dependency-env": "https://github.com/reasonml/dependency-env.git",
+    "nopam": "https://github.com/reasonml/nopam.git",
+    "realpath": "*",
+    "reason": "https://github.com/facebook/reason.git",
+    "rebel": "https://github.com/reasonml/rebel.git"
+  },
+  "rebel": {
+    "ocamlfindDependencies": [
+      "lablgl",
+      "lablgl.glut",
+      "core"
+    ]
+  }
+}
