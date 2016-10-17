@@ -17,7 +17,7 @@ let linear = fun bounds::(domain: Gl.point2) => {
    let step = (max -. min) /. 2.;
    fun value => {
      let offset = value -. mid;
-     offset /. step;
+     -1.0 *. offset /. step;
    };
  };
 
@@ -35,5 +35,5 @@ let parseRange = fun data::data padding::padding => {
   let range = List.map (fun (_, y) => y) data;
   let upper = List.fold_left max 0.0 range;
   let lower = List.fold_left min max_float range;
-  (upper -. bottom, lower -. top);
+  (upper, lower);
 };

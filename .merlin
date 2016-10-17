@@ -37,4 +37,4 @@ FLG -w -30 -w -40 -open Src
 
 
 # User Custom config here
-
+PKG labgl glut

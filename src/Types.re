@@ -3,4 +3,8 @@
  * vim: set ft=reason:
  */
 
-type point = (float, float);
+
+type chartState = {
+  windowSize: int,
+  useGrid: bool,
+};
