@@ -12,6 +12,7 @@ _build/**
 *.annot
 *.run
 *.opt
+*.native
 
 node_modules
 .jenga
